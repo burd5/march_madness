@@ -1,5 +1,15 @@
 import streamlit as st
 st.set_page_config(layout="wide")
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #FFFFFF; /* White background */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 import plotly.express as px
 import pandas as pd
 from upset_bar_graph import create_bar_graph, seed_upsets
