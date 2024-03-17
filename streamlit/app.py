@@ -11,12 +11,13 @@ from consts import rounds, teams, years
 def intro():
     page_bg_img = '''
     <style>
-    body {
+    .stApp {
     background-image: url("https://www.elpasotimes.com/gcdn/presto/2023/03/05/USAT/57198122-41e6-4394-896c-407e0f588e50-USATSI_17918452.jpg?crop=8639,4859,x0,y439&width=1600&height=800&format=pjpg&auto=webp");
     background-size: cover;
     }
     </style>
-    '''
+    ''' % bin_str
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
     st.markdown(page_bg_img, unsafe_allow_html=True)
     st.columns(3)[1].markdown("<h1>Intro</h1>", unsafe_allow_html=True)
