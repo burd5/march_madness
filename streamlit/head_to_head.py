@@ -3,7 +3,7 @@ conn = st.connection("postgresql", type="sql")
 import pandas as pd
 from settings import URL,KEY
 from st_supabase_connection import SupabaseConnection
-conn = st.connection("supabase",type=SupabaseConnection, url=URL, key=KEY)
+conn = st.connection("supabase",type=SupabaseConnection)
 
 
 def team_info(team, year):

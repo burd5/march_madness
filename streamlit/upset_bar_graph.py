@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 from settings import URL, KEY
 from st_supabase_connection import SupabaseConnection
-conn = st.connection("supabase",type=SupabaseConnection, url=URL, key=KEY)
+conn = st.connection("supabase",type=SupabaseConnection)
 
 def seed_upsets(round, start_year, end_year):
     rows = conn.query("*", table="upset_seed_info", ttl="10m").execute()

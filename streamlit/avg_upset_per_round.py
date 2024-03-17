@@ -3,7 +3,7 @@ import plotly.express as px
 from st_supabase_connection import SupabaseConnection
 import pandas as pd
 from settings import URL,KEY
-conn = st.connection("supabase",type=SupabaseConnection, url=URL, key=KEY)
+conn = st.connection("supabase",type=SupabaseConnection)
 
 def get_upset_count(start_year, end_year):
     rows = conn.query("*", table="upset_count", ttl="10m").execute()
