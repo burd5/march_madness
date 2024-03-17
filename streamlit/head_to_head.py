@@ -1,8 +1,9 @@
 import streamlit as st
 conn = st.connection("postgresql", type="sql")
 import pandas as pd
+from settings import URL,KEY
 from st_supabase_connection import SupabaseConnection
-conn = st.connection("supabase",type=SupabaseConnection, url="https://qjvaztljeffutvqxkymb.supabase.co", key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFqdmF6dGxqZWZmdXR2cXhreW1iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA2MzE5MzQsImV4cCI6MjAyNjIwNzkzNH0.64R0euDNbTGARB7QdClJCseAumuu3eXYfPh40nM-7sw")
+conn = st.connection("supabase",type=SupabaseConnection, url=URL, key=KEY)
 
 
 def team_info(team, year):

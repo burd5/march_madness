@@ -10,6 +10,15 @@ from head_to_head import team_info, return_table
 from consts import rounds, teams, years
 
 def upsets():
+    st.markdown(
+    """
+    <style>
+    body {
+        background-color: #FFFFFF; /* White background */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True)
     st.columns(3)[1].markdown("<h1>March Madness Upsets</h1>", unsafe_allow_html=True)
     with st.sidebar:
         selected_round = st.selectbox('Select a Round', rounds)
@@ -33,6 +42,15 @@ def upsets():
         st.markdown("<p style='text-align: center;'>This graph displays how a seed ranks against computer and general seed expectations. You can see 11 and 15 really overperform on both PAKE and PASE measures making them a strong pick for potential upsets.</p>", unsafe_allow_html=True)
 
 def head_to_head():
+    st.markdown(
+    """
+    <style>
+    body {
+        background-color: #FFFFFF; /* White background */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True)
     st.columns(3)[1].markdown("<h1 style='text-align: center;'>Head to Head</h1>", unsafe_allow_html=True)
 
     with st.sidebar:

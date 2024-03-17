@@ -1,9 +1,9 @@
 import streamlit as st
 import plotly.express as px
-from st_supabase_connection import SupabaseConnection
 import pandas as pd
-
-conn = st.connection("supabase",type=SupabaseConnection, url="https://qjvaztljeffutvqxkymb.supabase.co", key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFqdmF6dGxqZWZmdXR2cXhreW1iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA2MzE5MzQsImV4cCI6MjAyNjIwNzkzNH0.64R0euDNbTGARB7QdClJCseAumuu3eXYfPh40nM-7sw")
+from settings import URL,KEY
+from st_supabase_connection import SupabaseConnection
+conn = st.connection("supabase",type=SupabaseConnection, url=URL, key=KEY)
 
 def seed_upsets(round, start_year, end_year):
     rows = conn.query("*", table="upset_seed_info", ttl="10m").execute()

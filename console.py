@@ -1,5 +1,5 @@
 import psycopg2
-from settings import DATABASE_URL
+from streamlit.settings import DATABASE_URL
 import streamlit as st
 from st_supabase_connection import SupabaseConnection
 import pandas as pd

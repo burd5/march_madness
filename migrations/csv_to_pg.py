@@ -2,7 +2,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 import psycopg2
 import os
-from ..settings import USER,DATABASE
+from ..streamlit.settings import USER,DATABASE
 
 data_file_path = os.listdir('/Users/austinburdette/Documents/Projects/march_madness/data/')
 
