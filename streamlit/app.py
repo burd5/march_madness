@@ -9,19 +9,16 @@ from head_to_head import team_info, return_table
 from consts import rounds, teams, years
 
 def intro():
-    st.markdown(
-    """
+    page_bg_img = '''
     <style>
-    .reportview-container {
-        background: url("https://www.elpasotimes.com/gcdn/presto/2023/03/05/USAT/57198122-41e6-4394-896c-407e0f588e50-USATSI_17918452.jpg?crop=8639,4859,x0,y439&width=1600&height=800&format=pjpg&auto=webp")
-    }
-   .sidebar .sidebar-content {
-        background: url("")
+    body {
+    background-image: url("https://www.elpasotimes.com/gcdn/presto/2023/03/05/USAT/57198122-41e6-4394-896c-407e0f588e50-USATSI_17918452.jpg?crop=8639,4859,x0,y439&width=1600&height=800&format=pjpg&auto=webp");
+    background-size: cover;
     }
     </style>
-    """,
-    unsafe_allow_html=True
-)
+    '''
+
+    st.markdown(page_bg_img, unsafe_allow_html=True)
     st.columns(3)[1].markdown("<h1>Intro</h1>", unsafe_allow_html=True)
     st.markdown("""<p>If you don't go any farther, there are 3 things you should know when making your picks:</p>""",unsafe_allow_html=True)
     st.markdown("""<ul>
