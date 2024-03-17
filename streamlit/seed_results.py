@@ -15,7 +15,7 @@ def get_seed_results():
     return filtered_df
 
 def create_scatter_plot(seed_results):
-    fig = px.scatter(seed_results, x='Performance Against Computer Expectations (PAKE)', y='Performance Against Seed Expectations (PASE)', text='Seed', title='Seeds that Over/Under Perform: PAKE & PASE')
+    fig = px.scatter(seed_results, x='Performance Against Computer Expectations (PAKE)', y='Performance Against Seed Expectations (PASE)', text='Seed', title='Seeds that Over/Under Perform: PAKE & PASE (2008-2023)')
     fig.update_xaxes(showgrid=False, tickmode='linear', tick0=1, dtick=1)
     fig.update_yaxes(showgrid=False, tickmode='linear', tick0=1, dtick=1)
     fig.update_traces(marker=dict(symbol='circle', size=20, color='orange'), textfont=dict(color='black'))
