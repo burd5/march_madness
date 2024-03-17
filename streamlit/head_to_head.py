@@ -1,7 +1,5 @@
 import streamlit as st
-conn = st.connection("postgresql", type="sql")
 import pandas as pd
-from settings import URL,KEY
 from st_supabase_connection import SupabaseConnection
 conn = st.connection("supabase",type=SupabaseConnection)
 
