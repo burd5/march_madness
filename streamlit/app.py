@@ -51,7 +51,7 @@ def upsets():
         st.markdown("<p style='text-align: center;'>This graph displays the average number of upsets per round over the selected time period. The average remains relatively stable, which warrants caution for fans who may want to favor a lot of upset picks in the first two rounds.</p>", unsafe_allow_html=True)
     with col4:
         st.write(seed_upset_rank_scatter)
-        st.markdown("<p style='text-align: center;'>This graph displays how a seed ranks against computer and general seed expectations. You can see 11 and 15 really overperform on both PAKE and PASE measures making them a strong pick for potential upsets.</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center;'>This graph displays how a seed ranks against computer and general seed expectations. The 11 and 15 seeds overperform on both PAKE and PASE measures, making them a strong pick for potential upsets.</p>", unsafe_allow_html=True)
 
 def head_to_head():
     st.markdown("""<style>body {background-color: #FFFFFF; /* White background */}</style>""",unsafe_allow_html=True)
