@@ -80,6 +80,6 @@ page_names_to_funcs = {
     "Head to Head": head_to_head,
 }
 
-st.markdown("""<style>[data-testid=stSidebar] {background-color: #4682B4;}</style>""", unsafe_allow_html=True)
+# st.markdown("""<style>[data-testid=stSidebar] {background-color: #4682B4;}</style>""", unsafe_allow_html=True)
 demo_name = st.sidebar.selectbox("Choose a page", page_names_to_funcs.keys())
 page_names_to_funcs[demo_name]()
