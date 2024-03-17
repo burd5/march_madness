@@ -31,7 +31,7 @@ def return_table(df, team_num, name, year):
         for column in df.columns:
             if column not in ['index', 'TEAM ID']:
                 st.write(f"<h4 style='text-align: {alignment}; color: orange;'>{column.replace('_', ' ').title()}</h4>", unsafe_allow_html=True)
-                st.write(f"<h6 style='text-align: {alignment};'>{df[column].iloc[0]}</h6>", unsafe_allow_html=True)
+                st.write(f"<h5 style='text-align: {alignment};'>{df[column].iloc[0]}</h5>", unsafe_allow_html=True)
 
 #                 query = f"""select
 #                 "YEAR" as "Year",
