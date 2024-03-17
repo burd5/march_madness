@@ -8,27 +8,6 @@ from seed_results import get_seed_results, create_scatter_plot
 from head_to_head import team_info, return_table
 from consts import rounds, teams, years
 
-def intro():
-    page_bg_img = '''
-    <style>
-    .stApp {
-    background-image: url("https://www.elpasotimes.com/gcdn/presto/2023/03/05/USAT/57198122-41e6-4394-896c-407e0f588e50-USATSI_17918452.jpg?crop=8639,4859,x0,y439&width=1600&height=800&format=pjpg&auto=webp");
-    background-size: cover;
-    }
-    </style>
-    ''' 
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-    st.columns(3)[1].markdown("<h1>Intro</h1>", unsafe_allow_html=True)
-    st.markdown("""<h3 style='color: navy; backgroundColor: white'>If you don't go any farther, there are 3 things you should know when making your picks:</h3>""",unsafe_allow_html=True)
-    st.markdown("""<ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                   </ul>""",unsafe_allow_html=True)
-
-
 def upsets():
     st.markdown("""<style>body {background-color: #FFFFFF; /* White background */}</style>""",unsafe_allow_html=True)
     st.columns(3)[1].markdown("<h1>March Madness Upsets</h1>", unsafe_allow_html=True)
@@ -75,7 +54,6 @@ def head_to_head():
         return_table(second_team_information, 2, second_team, year)
 
 page_names_to_funcs = {
-    "Home": intro,
     "Upsets": upsets,
     "Head to Head": head_to_head,
 }
