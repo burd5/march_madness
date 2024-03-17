@@ -1,15 +1,5 @@
 import streamlit as st
 st.set_page_config(layout="wide")
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #FFFFFF; /* White background */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 import plotly.express as px
 import pandas as pd
 from upset_bar_graph import create_bar_graph, seed_upsets
@@ -17,6 +7,17 @@ from avg_upset_per_round import get_upset_count, create_line_graph
 from seed_results import get_seed_results, create_scatter_plot
 from head_to_head import team_info, return_table
 from consts import rounds, teams, years
+
+def intro():
+    st.markdown("""<style>body {background-color: #FFFFFF; /* White background */}</style>""",unsafe_allow_html=True)
+    st.columns(3)[1].markdown("<h1>Intro</h1>", unsafe_allow_html=True)
+    st.markdown("""<p>If you don't go any farther, there are 3 things you should know when making your picks:</p>""",unsafe_allow_html=True)
+    st.markdown("""<ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                   </ul>""",unsafe_allow_html=True)
+
 
 def upsets():
     st.markdown("""<style>body {background-color: #FFFFFF; /* White background */}</style>""",unsafe_allow_html=True)
@@ -64,6 +65,7 @@ def head_to_head():
         return_table(second_team_information, 2, second_team, year)
 
 page_names_to_funcs = {
+    "Home": intro,
     "Upsets": upsets,
     "Head to Head": head_to_head,
 }
