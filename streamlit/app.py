@@ -1,5 +1,5 @@
 import streamlit as st
-st.set_page_config(layout="wide", background_color="#FFFFFF")
+st.set_page_config(layout="wide")
 from utils import seed_upsets, get_upset_count
 import plotly.express as px
 import pandas as pd
