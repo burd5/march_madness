@@ -21,7 +21,7 @@ def intro():
 
     st.markdown(page_bg_img, unsafe_allow_html=True)
     st.columns(3)[1].markdown("<h1>Intro</h1>", unsafe_allow_html=True)
-    st.markdown("""<h3 style='color: white;'>If you don't go any farther, there are 3 things you should know when making your picks:</h3>""",unsafe_allow_html=True)
+    st.markdown("""<h3 style='color: navy; backgroundColor: white'>If you don't go any farther, there are 3 things you should know when making your picks:</h3>""",unsafe_allow_html=True)
     st.markdown("""<ul>
                         <li></li>
                         <li></li>
