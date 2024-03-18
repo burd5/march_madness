@@ -4,3 +4,4 @@ frontend/.streamlit/secrets.toml
 .DS_Store
 supabase/
 dump2.sql
+frontend/dump5.sql
