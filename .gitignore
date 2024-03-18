@@ -1,4 +1,5 @@
-streamlit/.streamlit/secrets.toml
+frontend/.streamlit/secrets.toml
 .venv
 .env
 .DS_Store
+supabase
