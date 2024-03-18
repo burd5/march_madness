@@ -32,7 +32,7 @@ def team_info(team, year):
         "TOV%D" as "Percent of Turnovers Forced",
         "OREB%" as "Percent of Rebounds Grabbed on Offensive End",
         "DREB%" as "Percent of Rebounds Grabbed on Defensive End"
-        from kenpom_barttorvik
+        from kenpom_updated
         where "TEAM" = '{team}' AND
                 "YEAR" = {year}
         """ 
