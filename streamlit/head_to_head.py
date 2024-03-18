@@ -5,8 +5,7 @@ from sqlalchemy import text
 from settings import SQL_ACLH_STRING
 import os
 
-db_url = os.environ.get('ALCH_STRING')
-engine=create_engine(db_url)
+engine=create_engine(SQL_ACLH_STRING)
 connection=engine.connect()
 
 def team_info(team, year):
