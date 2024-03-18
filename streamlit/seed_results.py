@@ -4,9 +4,13 @@ import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy import text
 from settings import SQL_ACLH_STRING
+import os
 
+# engine=create_engine(SQL_ACLH_STRING)
+# connection=engine.connect()
 
-engine=create_engine(SQL_ACLH_STRING)
+db_url = os.environ.get('ALCH_STRING')
+engine=create_engine(db_url)
 connection=engine.connect()
 
 def get_seed_results():

@@ -4,8 +4,10 @@ from sqlalchemy import create_engine
 from sqlalchemy import text
 import pandas as pd
 from settings import SQL_ACLH_STRING
+import os
 
-engine=create_engine(SQL_ACLH_STRING)
+db_url = os.environ.get('ALCH_STRING')
+engine=create_engine(db_url)
 connection=engine.connect()
 
 def get_upset_count(start_year, end_year):
