@@ -2,4 +2,5 @@ frontend/.streamlit/secrets.toml
 .venv
 .env
 .DS_Store
-supabase
+supabase/
+dump2.sql
