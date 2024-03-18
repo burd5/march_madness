@@ -7,7 +7,11 @@ from sqlalchemy import create_engine
 from sqlalchemy import text
 import os
 
-engine=create_engine(SQL_ACLH_STRING)
+# engine=create_engine(SQL_ACLH_STRING)
+# connection=engine.connect()
+
+db_url = os.environ.get('ALCH_STRING')
+engine=create_engine(db_url)
 connection=engine.connect()
 
 def seed_upsets(round, start_year, end_year):
