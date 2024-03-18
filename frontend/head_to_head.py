@@ -40,8 +40,6 @@ def team_info(team, year):
         where "TEAM" = '{team}' AND
                 "YEAR" = {year}
         """ 
-    st.cache_data.clear()
-
     df = pd.read_sql(text(query), con=connection)
     return df
 

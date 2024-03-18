@@ -54,7 +54,6 @@ def head_to_head():
         return_table(second_team_information, 2, second_team, year)
 
 
-
 page_names_to_funcs = {
     "Upsets": upsets,
     "Head to Head": head_to_head,
