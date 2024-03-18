@@ -6,7 +6,7 @@ from settings import SQL_ACLH_STRING
 from sqlalchemy import create_engine
 from sqlalchemy import text
 
-engine=create_engine(SQL_ACLH_STRING)
+engine=create_engine(text(SQL_ACLH_STRING))
 connection=engine.connect()
 
 def seed_upsets(round, start_year, end_year):
