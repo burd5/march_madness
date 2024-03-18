@@ -6,8 +6,7 @@ import pandas as pd
 from settings import SQL_ACLH_STRING
 import os
 
-db_url = os.environ.get('ALCH_STRING')
-engine=create_engine(db_url)
+engine=create_engine(st.secrets["SQL_ALCH_STRING"])
 connection=engine.connect()
 # engine=create_engine(SQL_ACLH_STRING)
 # connection=engine.connect()
