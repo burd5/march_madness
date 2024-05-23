@@ -1,6 +1,5 @@
 import streamlit as st
 st.set_page_config(layout="wide")
-st.set_theme('light')
 import plotly.express as px
 import pandas as pd
 from upset_bar_graph import create_bar_graph, seed_upsets
